@@ -1,7 +1,7 @@
 #! /bin/bash
 
 function wifi() {
-    echo " $(/usr/bin/nmcli dev wifi | grep -E '^[*]' | awk '/*/ {print $2}')"
+    echo " $(/usr/bin/nmcli dev wifi | grep -E '^[*]' | awk '/*/ {print $3}')"
 }
 
 function customDate() {
